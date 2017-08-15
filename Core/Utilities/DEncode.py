@@ -40,7 +40,7 @@ def hintParticularTypes( item ):
     newDict = {}
     for key in item:
       newDict[key] = hintParticularTypes( item[key] )
-      return newDict
+    return newDict
   elif isinstance( item, _dateTimeType ):
     dateTimeTuple = ( item.year, item.month, item.day, item.hour,
                       item.minute, item.second,
